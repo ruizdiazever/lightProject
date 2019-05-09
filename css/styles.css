@@ -1,0 +1,211 @@
+
+*{
+	border: 0;
+}
+
+@font-face{
+	font-family:elon;
+	src: url(../font/Gotham-Light.ttf);
+}
+@font-face{
+	font-family:valve;
+	src: url(../font/Barlow-Black.ttf);
+}
+@font-face{
+	font-family:valve2;
+	src: url(../font/Barlow-Light.ttf);
+}
+
+
+
+
+
+
+
+
+
+
+ body {
+ 	margin: 0;
+ 	color: #000000;
+ 	font-family: 'Inconsolata', monospace;
+ 	text-align: center;
+ }
+ video {
+ 	position: fixed;
+ 	min-width: 100%;
+ 	min-height: 100%;
+
+ 	top: 50%;
+ 	left: 50%;
+
+ 	transform: translateX(-50%) translateY(-50%);
+
+ 	z-index: -1;
+ }
+
+
+img  {
+	display: block;
+	margin: 2em auto;
+}
+body section img {
+	text-align: left;
+	margin: 1.9em;
+}
+
+
+
+
+
+
+
+
+
+aside {
+	font-family:valve, monospace;
+	font-size: 1.5em;
+
+	/*La emocion ha deletreado el extasis*/
+	color: #f74843;
+	
+
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 140px;
+
+	width: 80%;
+
+}
+
+p {
+	margin: 1.9em;
+}
+
+aside  p{
+	font-family:valve2, monospace;
+	font-size: 0.7em;
+	color: #FDFEFE;
+
+	text-align: left;
+	margin-left: -0.1%;
+	margin-top: -30px;
+
+	width: 32%;
+}
+
+
+
+
+
+
+
+
+section article {
+	
+	font-family:valve, monospace;
+	color: #f74843;
+
+	font-size: 3.5em;
+
+	text-align: left;
+	line-height: 0.2em;
+
+	margin: 2.3em auto;
+	width: 90%;
+	margin-top: -30px; 
+
+}
+ #hola .nota {
+ 	color: red;
+ 	margin-bottom: 40%;
+ }
+
+
+
+
+a {
+	display: block;
+	color: #f74843;
+	font-weight: bold;
+	margin: 0em;
+	text-decoration: none;
+}
+
+/*COLOR CUANDO APUNTAS CON PUNTERO LOS LUGARES*/
+a:hover {
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+	line-height: 100%;
+	width: 100%;
+	height: 70px;
+
+	bottom: 0;
+	position: fixed;
+	margin-top: 50px;
+
+	background-color: #f74843;
+	font-family: 'Inconsolata', monospace;
+}
+/* Abajo el footer*/
+body ul a {
+	font-family:elon, monospace;
+	font-size: 16px;
+	color: #FFFFFF
+}
+
+.copy {
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul a {
+	color: #FFFFFF;
+	transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+ul a:hover {
+	color: #808080;
+	transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0em 0.5em;
+	color: #000000;
+	font-size: 12px;
+}
+
+.chan {
+	font-family: "Verdana", Verdana, serif;
+	color: #FFFFFF;
+}
