@@ -1,0 +1,10 @@
+.carousel-item{
+    height: 100vh;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.h2 {
+    margin: 10px;
+    text-align: justify;
+}

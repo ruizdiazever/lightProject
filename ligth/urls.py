@@ -9,3 +9,5 @@ urlpatterns = [
     path('equipment/', views_core.equipment, name='equipment'),
     path('bariloche/', views_gallery.bariloche, name='bariloche'),
 ]
+
+
