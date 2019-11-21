@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Project
+from .models import Photo
 
 def bariloche(request):
-    projects = Project.objects.all()
-    print(type(projects))
-    return render(request, "gallery/bariloche.html", {'projects':projects})
+    photos = Photo.objects.all()
+    print(type(photos))
+    return render(request, "gallery/bariloche.html", {'photos':photos})
