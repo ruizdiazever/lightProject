@@ -9,8 +9,8 @@ class Photo(models.Model):
     updated = models.DateTimeField(auto_now=True, verbose_name = "Fecha de modificacion")
 
     class Meta:
-        verbose_name = "photo"
-        verbose_name_plural = "photos"
+        verbose_name = "foto"
+        verbose_name_plural = "fotos"
         ordering = ["-created"]
     def __str__(self): 
         return self.title
