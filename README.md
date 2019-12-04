@@ -1,5 +1,5 @@
 # Project Light
-Personal photography page with Django by Python, thank you for your visit!
+Personal photography page with Django by Python, thank you for your visit.
 
 > - SQLite3
 > - Python 3.7
