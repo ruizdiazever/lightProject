@@ -11,6 +11,3 @@ Personal photography page with Django by Python, thank you for your visit!
 
 **About me**
 - Ever Ruiz Diaz: Desarrollo web, colaborador. http://sinconmasver.pythonanywhere.com/
-
-**Vincent Van Gogh**
-Es bueno amar tanto como se pueda, porque ahí radica la verdadera fuerza, y el que mucho ama realiza grandes cosas.
