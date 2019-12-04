@@ -16,15 +16,15 @@
             </ol>
             
                 <div class="carousel-inner">
-                        {% for photo in photos %}
-                        <div class="carousel-item active"><img src="{{photo.image.url}}" class="d-block w-100" alt="..."></div>
-                        {% endfor %}
-                    </div>
+                    {% for photo in photos %}
+                    <div class="carousel-item active"><img src="{{photo.image.url}}" class="d-block w-100" alt="..."></div>
+                    {% endfor %}
+                </div>
             
     
 
 
-            <a class="carousel-control-prev" href="{{photo.image.url[2]}}" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
