@@ -25,9 +25,12 @@ video {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-    filter: blur(5px)
+    filter: blur(15px);
+    filter:brightness(0.4);
 }
 
+
+/* NAVBAR */
 .navbar {
     background-color: transparent !important;
     margin: 5px
@@ -38,61 +41,82 @@ video {
     padding: 20px
 }
 
+
+
+
+/* ME */
 #me {
     color: #f74843
 }
-
 header {
     margin-top: 90px;
     width: 100%;
     margin-bottom: 70px
 }
-
 #header-texto {
     font-size: 20px;
     margin-bottom: 60px
 }
 
-.header-content-left article {
-    color: lightgray
-}
 
+
+
+
+/* FONT PLACES */
 #places article {
     font-family: valve, monospace;
-    color: lightgray
 }
-
+/* LINK PLACES */
 .header-content-left article a {
-    display: block;
-    color: ghostwhite;
     text-decoration: none
 }
 
-#places>article a p:hover {
+#places>article a h1{
     color: #f74843
+}
+#places>article a h1:hover {
+    color: white
 }
 
 div.header-content-right img {
     padding-top: 50px
 }
 
+#places>article h1 {
+    color: white;
+}
+
+
+
+
+
+
+/* RIGHT CONTENT */
 div.row {
     margin-top: 10px;
     margin-bottom: 10px
 }
-
+/* TITTLE RIGTH CONTENT */
 .title {
     color: #f74843
 }
 
+
+
+/* P RIGTH CONTENT */
 .container p {
     color: white
 }
-
 #header>div>div>div:nth-child(2)>div {
     padding-top: 35%
 }
 
+
+
+
+
+
+/* REDES */
 footer {
     text-align: center;
     line-height: center;
@@ -132,7 +156,7 @@ div.copy {
 }
 
 #redes ul a:hover {
-    color: blue;
+    color: black;
     transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
@@ -140,6 +164,10 @@ div.copy {
     -webkit-transition: all 0.5s ease-out
 }
 
+
+
+
+/* COLOR */
 .color {
     color: snow;
     -webkit-transition: color 3s;

@@ -3,21 +3,18 @@
 
 {% block title %}Home{% endblock %}
 {% block style %}<link rel="stylesheet" href="{% static 'core/css/main_index.css' %}">{% endblock %}
-{% block background %}<video src="{% static 'core/video/dark.mp4' %}" autoplay loop muted poster="{% static 'core/img/flower.jpg' %}"></video> {% endblock %}
+{% block background %}<video src="{% static 'core/img/video/dark.mp4' %}" autoplay loop muted poster="{% static 'core/img/flower.jpg' %}"></video> {% endblock %}
 
 
 {% block navbar %}<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">{% endblock %}
 
 {% block color %}
-    <li class="nav-item active">
-        <a class="nav-link text-white" href="#header">Home</a>
+   <!--  <li class="nav-item">
+        <a target="blank" class="nav-link text-white" href="http://sinconmasver.pythonanywhere.com/">Portafolio</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="#redes">Portfolio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-white" href="#header">Contact</a>
-    </li>
+        <a target="blank" class="nav-link text-white" href="http://sinconmasver.pythonanywhere.com/contact/">Contacto</a>
+    </li> -->
 {% endblock %}
 
 {% block content %}
@@ -27,7 +24,7 @@
                 <div class="col-md-6">
                     <div class="header-content-left">
                         <article>
-                            <h1 id="me">Bienvenido, Ever Toujours.</h1>
+                            <h1 class="display-4" id="me">Ever Toujours</h1>
                         </article>
                         <br>
                         
@@ -50,108 +47,76 @@
                         </div>
                         
                         <div id="places">
-                            <article><a title="Bariloche" href="{% url 'bariloche' %}">
-                                    <h1 class="display-3">
-                                        <P>Bariloche</P>
-                                    </h1>
-                                </a></article>
-                            <article><a title="Buenos Aires" href="buenosaires.html">
-                                    <h1 class="display-3">
-                                        <P>Buenos Aires</P>
-                                    </h1>
-                                </a></article>
-                            <article><a title="Example" href="{% url 'example' %}">
-                                    <h1 class="display-3">
-                                        <P>Example</P>
-                                    </h1>
-                                </a></article>
-                            <article><a title="People" href="people.html">
-                                    <h1 class="display-3">
-                                        <P>People</P>
-                                    </h1>
-                                </a></article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Italy</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>New Zealand</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Seattle</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>India</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Tromsø</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Turquía</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Iceland</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Switzerland</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>China</P>
-                                </h1>
-                            </article>
-                            <article>
-                                <h1 class="display-3">
-                                    <P>Software</P>
-                                </h1>
-                            </article>
+                            <article><a title="Bariloche" href="{% url 'bariloche' %}"><h1 class="display-3">Bariloche</h1></a></article>
+                            <article><a title="Bariloche" href="{% url 'example' %}"><h1 class="display-3">Ejemplo</h1></a></article>
+
+                            <article><h1 class="display-3">Buenos Aires</h1></article>
+
+                            <article><h1 class="display-3">Example</h1></article>
+
+                            <article><h1 class="display-3">People</h1></article>
+
+                            <article><h1 class="display-3">Italy</h1></article>
+
+                            <article><h1 class="display-3">Zealand</h1></article>
+
+                            <article><h1 class="display-3">Seattle</h1></article>
+
+                            <article><h1 class="display-3">India</h1></article>
+
+                            <article><h1 class="display-3">Tromsø</h1></article>
+
+                            <article><h1 class="display-3">Turquía</h1></article>
+
+                            <article><h1 class="display-3">Iceland</h1></article>
+
+                            <article><h1 class="display-3">Switzerland</h1></article>
+
+                            <article><h1 class="display-3">China</h1></article>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6">
-                    
                         <div id="derecho" class="header-content-right">
-                            <div class="container">
-                                <div class="row project">
-                                    <div class="col-lg-4 col-md-4 offset-lg-1">
-                                        <img class="img-fluid" src="{% static 'core/img/drone4.jpg' %}" alt="">
+
+                                <div class="container">
+                                    <div class="row project">
+                                        <div class="col-lg-4 col-md-4 offset-lg-1">
+                                            <img class="img-fluid" src="{% static 'core/img/gadgets/camera_2.jpg' %}" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <h2 class="mt-5 section-heading title">Consejos</h2>
+                                            <p>Podras encontrar una guia rapida para tomar la mejor imagen en el momento & lugar
+                                                adecuado.
+                                            </p>
+                                            <p><a href="http://google.com">Más información</a></p>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-7 col-md-8">
-                                        <h2 class="mt-5 section-heading title">Dispositivos</h2>
-                                        <p>Equipos & dispositivos que utilizo, podras encontrar detalles & mi descripcion de
-                                            cada dispositivo.</p>
-                                        <p><a href="{% url 'equipment' %}">Más información</a></p>
+
+                                    <div class="row project">
+                                        <div class="col-lg-4 col-md-4 offset-lg-1">
+                                            <img class="img-fluid" src="{% static 'core/img/gadgets/drone4.jpg' %}" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <h2 class="mt-5 section-heading title">Equipo</h2>
+                                            <p>Equipos & dispositivos profesionales, podras encontrar detalles & mi experiencia de
+                                                cada dispositivo.
+                                            <p><a href="{% url 'equipment' %}">Más información</a></p>
+                                        </div>
                                     </div>
-                                </div>
-    
-    
-                                <div class="row project">
-                                    <div class="col-lg-4 col-md-4 offset-lg-1">
-                                        <img class="img-fluid" src="{% static 'core/img/camera_2.jpg' %}" alt="">
+
+                                    <div class="row project">
+                                        <div class="col-lg-4 col-md-4 offset-lg-1">
+                                            <img class="img-fluid" src="{% static 'core/img/body/ever.jpg' %}" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <h2 class="mt-5 section-heading title">Sobre mi</h2>
+                                            <p>Estudiante de Software, especializado en desarrollo web. Gracias por tu visita.</p>
+                                            <br>
+                                            <p><a href="{% url 'equipment' %}">Más información</a></p>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-7 col-md-8">
-                                        <h2 class="mt-5 section-heading title">Consejos</h2>
-                                        <p>Podras encontrar una guia rapida para tomar la mejor imagen en el momento & lugar
-                                            adecuado.
-                                        </p>
-                                        <p><a href="http://google.com">Más información</a></p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

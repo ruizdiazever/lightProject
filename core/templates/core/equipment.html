@@ -10,18 +10,16 @@
 
 {% block color %}
     <li class="nav-item active">
-        <a class="nav-link text-black" href="{% url 'home' %}">Home</a>
+        <a class="nav-link text-black" href="{% url 'home' %}">INICIO</a>
     </li>
     <li class="nav-item active">
-        <a class="nav-link text-black" href="#redes">Portfolio</a>
-    </li>
-    <li class="nav-item active">
-        <a class="nav-link text-black" href="#redes">Contact</a>
+        <a class="nav-link text-black" href="http://sinconmasver.pythonanywhere.com/contact/">CONTACTO</a>
     </li>
 {% endblock %}
 
 
 {% block content %}
+<br><br>
 <!-- Camera n°1 -->
 <section id="camera">
     <div class="container mt-5">
@@ -36,12 +34,12 @@
                         con una velocidad abrumadora empacada en un cuerpo compacto. Mira cómo sus avances
                         tecnológicos aumentan su productividad..</p>
                     <a href="#" class="btn btn-outline-secondary btn-lg">Sitio web</a>
-                    <img src="{% static 'core/img/camera.jpg' %}" style="width: 100%;">
+                    <img src="{% static 'core/img/gadgets/camera.jpg' %}" style="width: 100%;">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="info-left">
-                    <img src="{% static 'core/img/camera_2.jpg' %}" style="width: 100%;">
+                    <img src="{% static 'core/img/gadgets/camera_2.jpg' %}" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -73,7 +71,7 @@
     </div>
 </section>
 
-<hr>
+<hr><br>
 
 <!-- Smartphone -->
 <header id="smartphone">
@@ -83,7 +81,7 @@
             <div class="col-md-6">
                 <!-- Boostrap esta dividido en 12 columnas -->
                 <div class="header-content-left">
-                    <img src="{% static 'core/img/huawei.png' %}" style="width: 100%;">
+                    <img src="{% static 'core/img/gadgets/huawei.png' %}" style="width: 100%;">
                 </div>
             </div>
             <div class="col-md-6">
@@ -122,7 +120,7 @@
 </header>
 
 <hr>
-
+<br><br>
 <!-- Tripode -->
 <section id="tripod">
         <div class="container mt-5">
@@ -137,12 +135,12 @@
                             compatibilidad móvil incorporada y detalles bien pensados ​​en todo momento. Además, está diseñado para la vida 
                             en la carretera: duradero, 100% útil y respaldado por la garantía de por vida Peak Design.</p>
                         <a href="#" class="btn btn-outline-secondary btn-lg">Sitio web</a><br><br>
-                        <img src="{% static 'core/img/tripod3.jpg' %}" style="width: 100%;">
+                        <img src="{% static 'core/img/gadgets/tripod3.jpg' %}" style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="info-left">
-                        <img src="{% static 'core/img/tripod.jpg' %}" style="width: 100%;">
+                        <img src="{% static 'core/img/gadgets/tripod.jpg' %}" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -150,7 +148,7 @@
     </section>
 <hr>
 
-
+<br><br>
 <!-- Drone -->
 <section id="drone">
         <div class="container mt-5">
@@ -163,24 +161,24 @@
                             avanzadas y exclusivas de DJI y es capaz de redefinir lo que es posible para el mundo de la fotografía 
                             aérea. Al crear el Mavic 2, hemos hecho realidad este sueño.</p>
                         <a href="#" class="btn btn-outline-secondary btn-lg">Sitio web</a><br><br>
-                        <img src="{% static 'core/img/drone.jpg' %}" style="width: 100%;">
+                        <img src="{% static 'core/img/gadgets/drone.jpg' %}" style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="info-left">
-                        <img src="{% static 'core/img/drone3.jpg' %}" style="width: 100%;"><br><br>
-                        <img src="{% static 'core/img/drone2.jpg' %}" style="width: 100%;">
+                        <img src="{% static 'core/img/gadgets/drone3.jpg' %}" style="width: 100%;"><br><br>
+                        <img src="{% static 'core/img/gadgets/drone2.jpg' %}" style="width: 100%;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<br><br>
+<br><br><br>
 
 
 
 <!-- Testimonial -->
-<section id="testimonial">
+<!-- <section id="testimonial">
     <div class="container">
         <p class="mb-2">
             Hace tres semanas que tengo el modelo Huawei P30 y estoy encantado con el.
@@ -197,7 +195,8 @@
         </p>
         <p class="h5">Ever Toujours</p>
     </div>
-</section> {% endblock %}
+</section>  -->
+{% endblock %}
     
     
 
