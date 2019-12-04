@@ -1,5 +1,5 @@
 # Project Light
-Personal photography page with Django by Python
+Personal photography page with Django by Python, thank you for your visit!
 
 > - SQLite3
 > - Python 3.7
@@ -11,3 +11,6 @@ Personal photography page with Django by Python
 
 **About me**
 - Ever Ruiz Diaz: Desarrollo web, colaborador. http://sinconmasver.pythonanywhere.com/
+
+**Vincent Van Gogh**
+Es bueno amar tanto como se pueda, porque ahí radica la verdadera fuerza, y el que mucho ama realiza grandes cosas.
