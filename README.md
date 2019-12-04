@@ -10,4 +10,5 @@ Personal photography page with Django by Python, thank you for your visit!
 
 
 **About me**
-- Ever Ruiz Diaz, estudiante de software especializado en desarrollo web. http://sinconmasver.pythonanywhere.com/
+- Ever Ruiz Diaz, estudiante de software especializado en desarrollo web. 
+- http://sinconmasver.pythonanywhere.com/
