@@ -9,5 +9,5 @@ Personal photography page with Django by Python, thank you for your visit!
 > - jQuery JavaScript Library 3.4.1
 
 
-**Ever Ruiz Diaz**, estudiante de software especializado en desarrollo web. 
+**Ever Ruiz Diaz**, software student, web development.. 
 - http://sinconmasver.pythonanywhere.com/
