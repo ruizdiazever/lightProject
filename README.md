@@ -10,4 +10,4 @@ Personal photography page with Django by Python, thank you for your visit!
 
 
 **About me**
-- Ever Ruiz Diaz: Desarrollo web, colaborador. http://sinconmasver.pythonanywhere.com/
+http://sinconmasver.pythonanywhere.com/
