@@ -21,7 +21,7 @@
                         {% endif %}
                     {%  endfor %}
                 </div>
-            <a class="carousel-control-prev" href="carouselExampleCaptions" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
@@ -31,5 +31,11 @@
             </a>
         </div>
     </div>
-    <p style="font-display: center;" class="display-4">Descripcion general de Bariloche, debe contener unos cuantos caracteres</p>
+    {% for photo in photos %}
+        {% if forloop.first %}
+            <p style="font-display: center;" class="display-4">{{photo.description.url}}</p></div>
+        {% else %}
+            <p style="font-display: center;" class="display-4">{{photo.description.url}}</p></div>
+        {% endif %}
+    {%  endfor %}
 {% endblock %}
