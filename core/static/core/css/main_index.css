@@ -4,13 +4,8 @@
 }
 
 @font-face {
-    font-family: valve;
-    src: url(../fonts/valve.ttf)
-}
-
-@font-face {
-    font-family: valve2;
-    src: url(../fonts/valve_2.ttf)
+    font-family: wow;
+    src: url(../fonts/accent.ttf);
 }
 
 body {
@@ -25,8 +20,8 @@ video {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-    filter: blur(15px);
-    filter:brightness(0.4);
+    filter: blur(1px);
+    filter:brightness(0.2);
 }
 
 
@@ -61,10 +56,13 @@ header {
 
 
 
-
+#places {
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
 /* FONT PLACES */
 #places article {
-    font-family: valve, monospace;
+    font-family: 'Monoton', cursive;
 }
 /* LINK PLACES */
 .header-content-left article a {
@@ -72,10 +70,10 @@ header {
 }
 
 #places>article a h1{
-    color: #f74843
+    color: white
 }
 #places>article a h1:hover {
-    color: white
+    color: #f74843
 }
 
 div.header-content-right img {
