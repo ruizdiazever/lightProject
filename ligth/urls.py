@@ -10,8 +10,8 @@ urlpatterns = [
     path('equipment/', views_core.equipment, name='equipment'),
     path('bariloche/', views_gallery.bariloche, name='bariloche'),
     path('buenosaires/', views_gallery.ba, name='ba'),
-    #path('people/', views_gallery.ba, name='people'),
-    #path('industrial/', views_gallery.ba, name='industrial'),
+    path('people/', views_gallery.people, name='people'),
+    path('industrial/', views_gallery.industrial, name='industrial'),
 ]
 
 if settings.DEBUG:
