@@ -3,8 +3,7 @@ from django.db import migrations, models
 # BARILOCHE
 class Photo(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
-    description = models.TextField(verbose_name = "Descripcion")
-    image = models.ImageField(verbose_name = "Imagen", upload_to="photos")
+    image = models.ImageField(verbose_name = "Imagen", upload_to="bariloche")
     created = models.DateTimeField(auto_now_add=True, verbose_name = "Fecha de creacion")
     updated = models.DateTimeField(auto_now=True, verbose_name = "Fecha de modificacion")
     class Meta:
@@ -18,7 +17,6 @@ class Photo(models.Model):
 # BUENOS AIRES
 class Ba(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
-    description = models.TextField(verbose_name = "Descripcion")
     image = models.ImageField(verbose_name = "Imagen", upload_to="ba")
     created = models.DateTimeField(auto_now_add=True, verbose_name = "Fecha de creacion")
     updated = models.DateTimeField(auto_now=True, verbose_name = "Fecha de modificacion")

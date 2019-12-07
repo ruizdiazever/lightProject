@@ -9,9 +9,9 @@ urlpatterns = [
     path('', views_core.home, name='home'),
     path('equipment/', views_core.equipment, name='equipment'),
     path('bariloche/', views_gallery.bariloche, name='bariloche'),
-    path('buenosaires/', views_gallery.ba, name='buenosaires'),
-    path('people/', views_gallery.ba, name='people'),
-    path('industrial/', views_gallery.ba, name='industrial'),
+    path('buenosaires/', views_gallery.ba, name='ba'),
+    #path('people/', views_gallery.ba, name='people'),
+    #path('industrial/', views_gallery.ba, name='industrial'),
 ]
 
 if settings.DEBUG:
