@@ -1,9 +1,9 @@
-# Project Light
+# Project Glow
 Personal photography page with Django by Python, thank you for your visit.
 
 > - SQLite3
 > - Python 3.7
-> - Django 2.2.7
+> - Django 3.0.3
 > - Bootstrap 4.3.1
 > - Font Awesome 5.10.2
 > - jQuery JavaScript Library 3.4.1
