@@ -8,20 +8,17 @@ from .models import Ba
 from .models import Industrial
 from .models import People
 
-
 # BARILOCHE
 class PhotoAdmin(admin.ModelAdmin):
     readonly_fields = ('created','updated')
 
 admin.site.register(Photo, PhotoAdmin)
 
-
 #BUENOS AIRES
 class BaAdmin(admin.ModelAdmin):
     readonly_fields = ('created','updated')
 
 admin.site.register(Ba, BaAdmin)
-
 
 #Industrial
 class IndustrialAdmin(admin.ModelAdmin):

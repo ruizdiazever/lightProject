@@ -3,11 +3,6 @@
     src: url(../fonts/elon.ttf)
 }
 
-@font-face {
-    font-family: wow;
-    src: url(../fonts/accent.ttf);
-}
-
 body {
     background: black
 }
@@ -60,10 +55,12 @@ header {
     margin-top: 110px;
     margin-bottom: 110px;
 }
+
 /* FONT PLACES */
 #places article {
     font-family: 'Monoton', cursive;
 }
+
 /* LINK PLACES */
 .header-content-left article a {
     text-decoration: none

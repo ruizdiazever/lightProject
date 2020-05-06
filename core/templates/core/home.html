@@ -2,10 +2,14 @@
 {% load static %}
 
 {% block title %}Home{% endblock %}
-{% block style %}<link rel="stylesheet" href="{% static 'core/css/main_index.css' %}">{% endblock %}
-{% block background %}<video src="{% static 'core/img/video/paulvandyk.mp4' %}" autoplay loop muted poster="{% static 'core/img/body/rick.jpg' %}"></video> {% endblock %}
 
+{% block style %}
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+{% endblock %}
 
+{% block background %}
+    <video src="{% static 'core/img/paulvandyk.mp4' %}" autoplay loop muted poster="{% static 'core/img/primary.jpg' %}">
+</video> {% endblock %}
 
 {% block content %}
 <header id="header">
@@ -13,37 +17,24 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="header-content-left">
+                    
                         <article>
                             <h1 class="display-4" id="me">Ever Toujours</h1>
                         </article>
-                        <br>
-                        <div id=header-texto>
-                            <p class="color color-4">Es bueno a</p><p class="color color-2">mar</p>
-                            <p class="color color-1">tanto como</p>
-                            <p class="color color-5">se</p>
-                            <p class="color color-2">pueda,</p>
-                            <p class="color color-5">porque ahí</p>
-                            <p class="color color-1">rad</p><p class="color color-5">ica</p>
-                            <p class="color color-2">la</p>
-                            <p class="color color-5">verdadera</p>
-                            <p class="color color-2">fuerza</p><p class="color color-5">, y</p>
-                            <p class="color color-3">el que mucho</p>
-                            <p class="color color-4">ama</p>
-                            <p class="color color-5">realiza</p>
-                            <p class="color color-2">grandes</p>
-                            <p class="color color-5">co</p><p class="color color-3">s</span><span class="color color-4">as.</span>
-                            <h4 id="me" style="float: right;">Vincent Van Gogh</h4>
-                        </div>
+
+                        <div class="mt-4" id="header-texto"> {% include 'core/colors.html' %} </div>
                         
                         <div id="places">
-                            <article><a title="Bariloche" href="{% url 'bariloche' %}"><h1 class="display-3">Mountain</h1></a></article>
+                            <article><a title="Bariloche" href="{% url 'mountain' %}"><h1 class="display-3">Mountain</h1></a></article>
                             <article><a title="Buenos Aires" href="{% url 'ba' %}"><h1 class="display-3">BA</h1></a></article>
                             <article><a title="People" href="{% url 'people' %}"><h1 class="display-3">People</h1></a></article>
+
                             <article><h1 class="display-3">Italy</h1></article>
                             <article><h1 class="display-3">Seattle</h1></article>
                             <article><h1 class="display-3">Tromsø</h1></article>
                             <article><h1 class="display-3">Iceland</h1></article>
                             <article><h1 class="display-3">China</h1></article>
+                            
                             <article><a title="Industrial" href="{% url 'industrial' %}"><h1 class="display-3">Others</h1></a></article> 
                         </div>
                     </div>
@@ -53,49 +44,6 @@
     </header>
 {% endblock %}
 
-
-
-
-
-
 {% block effect %}
-<script>
-window.sr = ScrollReveal();
-
-sr.reveal('#header', {
-    duration: 2000,
-    origin: 'bottom',
-    viewfactor: 0.2,
-    delay: 500,
-})
-
-sr.reveal('#me', {
-    duration: 2000,
-    origin: 'top',
-    distance: '300px'
-})
-
-sr.reveal('#derecho', {
-    duration: 2000,
-    origin: 'top',
-    distance: '300px'
-})
-
-sr.reveal('#redes', {
-    duration: 2000,
-    origin: 'bottom',
-    viewfactor: 0.2,
-})
-
-sr.reveal('#navbar', {
-    duration: 2000,
-    origin: 'left',
-})
-
-sr.reveal('#places', {
-    duration: 2000,
-    origin: 'right',
-    distance: '300px'
-})
-</script>
+    <script src="{% static 'core/js/homeEffect.js' %}" charset="utf-8"></script>
 {% endblock %}

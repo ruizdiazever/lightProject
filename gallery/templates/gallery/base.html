@@ -2,27 +2,18 @@
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %} | Ever Toujours</title>
-
-    <link rel="stylesheet" href="{% static 'gallery/vendor/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'gallery/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'gallery/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'gallery/css/styles.css' %}">
-
+    {% load bootstrap4 %} {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/gallery.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        {% block content %}{% endblock %}
-        
-
-
-        <script src="{% static 'gallery/js/jquery.min.js' %}" charset="utf-8"></script>
-        <script src="{% static 'gallery/js/popper.min.js' %}" charset="utf-8"></script>
-        <script src="{% static 'gallery/js/bootstrap.min.js' %}" charset="utf-8"></script>
+    {% block content %}{% endblock %}
+    {% bootstrap_javascript jquery='full' %}
 </body>
 </html>

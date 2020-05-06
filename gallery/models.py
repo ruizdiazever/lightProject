@@ -1,6 +1,5 @@
 from django.db import migrations, models
 
-# BARILOCHE
 class Photo(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
     image = models.ImageField(verbose_name = "Imagen", upload_to="bariloche")
@@ -13,8 +12,6 @@ class Photo(models.Model):
     def __str__(self): 
         return self.title
 
-
-# BUENOS AIRES
 class Ba(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
     image = models.ImageField(verbose_name = "Imagen", upload_to="ba")
@@ -27,8 +24,6 @@ class Ba(models.Model):
     def __str__(self): 
         return self.title
 
-
-# PEOPLE
 class People(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
     image = models.ImageField(verbose_name = "Imagen", upload_to="people")
@@ -41,7 +36,6 @@ class People(models.Model):
     def __str__(self): 
         return self.title
 
-# INDUSTRIAL
 class Industrial(models.Model):
     title = models.CharField(max_length=200, verbose_name = "Referencia") 
     image = models.ImageField(verbose_name = "Imagen", upload_to="industrial")

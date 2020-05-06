@@ -8,59 +8,28 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %} | Ever Toujours</title>
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/font-awesome.min.css' %}">
+    {% load bootstrap4 %}{% bootstrap_css %}
     {% block style %}{% endblock %}
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-
-
-
-
 </head>
 
 <body>
     {% block background %} {% endblock %}
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a style="margin-top: 20px;" title="Inicio" href="{% url 'home' %}"><img src="{% static 'core/img/logos/logo.png' %}" title="Rerum System 0.1"
-                    alt="Aqui debe estar el logo" /></a>
+            <a style="margin-top: 20px;" title="Inicio" href="{% url 'home' %}"><img src="{% static 'core/img/logo.png' %}" title="Rerum System 0.1"alt="Aqui debe estar el logo" /></a>
         </div>
     </nav> 
 
     {% block content %} {% endblock %}
 
-    <footer class="col-md-12">
-        <div id="redes">
-            <ul>
-                <a target="blank" href="https://github.com/ruizdiazever">GitHub</a>
-                <a target="blank" href="https://www.linkedin.com/in/everdev/">Linkedln</a>
-<!--                 <a href="{% static 'core/archives/cv_design_low.pdf' %}">Curriculum</a> -->
-                <a target="blank" href="http://everdev.pythonanywhere.com/">Portfolio</a>
-            </ul>
-        </div>
-        <div class="copy">
-            2019 &copy Ever Toujours | Todos los Derechos Reservados
-        </div>
-    </footer>
+    {% include 'core/footer.html' %}
 
-    <script src="{% static 'core/js/jquery.min.js' %}" charset="utf-8"></script>
-    <script src="{% static 'core/js/popper.min.js' %}" charset="utf-8"></script>
-    <script src="{% static 'core/js/bootstrap.min.js' %}" charset="utf-8"></script>
     <script src="{% static 'core/js/scrollreveal.min.js' %}" charset="utf-8"></script>
-
+    <script src="{% static 'core/js/querySelector.js' %}" charset="utf-8"></script>
+    {% bootstrap_javascript jquery='full' %}
     {% block effect %} {% endblock %}
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
