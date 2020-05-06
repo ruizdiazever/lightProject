@@ -66,12 +66,31 @@ header {
     text-decoration: none
 }
 
+
+
+
 #places>article a h1{
-    color: white
+    color: white;
+
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
 }
 #places>article a h1:hover {
-    color: #f74843
+    color: #f74843;
+
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
 }
+
+
+
+
 
 div.header-content-right img {
     padding-top: 50px
@@ -115,11 +134,10 @@ div.row {
 footer {
     text-align: center;
     line-height: center;
-    width: 100%;
+    width: 80px;
     height: 100%;
     bottom: 0;
     position: static;
-    background-color: #f74843;
     font-family: 'Inconsolata', monospace
 }
 
@@ -133,7 +151,7 @@ footer {
 
 div.copy {
     margin-top: 0px;
-    color: black;
+    color: #f74843;
     position: relative
 }
 
@@ -143,6 +161,7 @@ div.copy {
     font-size: 15px;
     padding: 9px;
     color: white;
+
     transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     -ms-transition: all 0.5s ease-in;
@@ -151,14 +170,13 @@ div.copy {
 }
 
 #redes ul a:hover {
-    color: black;
+    color: #f74843;
     transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out
 }
-
 
 
 
