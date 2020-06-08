@@ -7,6 +7,7 @@ Personal photography page with Django by Python, thank you for your visit.
 - [**Bootstrap 4**](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 - [**Font Awesome**](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
 - [**jQuery**](https://api.jquery.com/)
+- [**Docker**](https://hub.docker.com/repository/docker/ruizdiazever/glow)
 
 
 ## Deployment🤖
