@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "C:\\venv\\django\\Scripts\\python.exe",
     "python.jediEnabled": false,
+    "python.languageServer": "Microsoft",
 }
