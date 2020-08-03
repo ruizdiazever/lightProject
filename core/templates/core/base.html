@@ -9,7 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %} | Ever Toujours</title>
     {% load bootstrap4 %}{% bootstrap_css %}
-    {% block style %}{% endblock %}
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+    {% endblock %}
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
 </head>
@@ -28,16 +30,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                 <ul class="nav justify-content-end">
 
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Tech</a>
+                    <li class="nav-item" >
+                        <a class="nav-link active" href="#">Tech</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="https://everdev.pythonanywhere.com/contact/" target="blank">Contact</a>
+                        <a class="nav-link"  href="https://everdev.pythonanywhere.com/contact/" target="blank">Contact</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="https://everdev.pythonanywhere.com/about/" target="blank">About</a>
+                        <a class="nav-link" href="https://everdev.pythonanywhere.com/about/" target="blank">About</a>
                     </li>
                 </ul>
             </div>
