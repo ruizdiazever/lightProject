@@ -12,30 +12,26 @@
 </video> {% endblock %}
 
 {% block content %}
-<header id="header">
+    <header id="header">
         <div class="container mt-5 principal">
             <div class="row">
                 <div class="col-md-8">
                     <div class="header-content-left">
-                    
-                        <article>
-                            <h1 class="display-4" id="me">Ever Toujours</h1>
-                        </article>
 
                         <div class="mt-4" id="header-texto"> {% include 'core/colors.html' %} </div>
                         
                         <div id="places">
-                            <article><a title="Bariloche" href="{% url 'mountain' %}"><h1 class="display-3">Mountain</h1></a></article>
-                            <article><a title="Buenos Aires" href="{% url 'ba' %}"><h1 class="display-3">BA</h1></a></article>
-                            <article><a title="People" href="{% url 'people' %}"><h1 class="display-3">People</h1></a></article>
+                            <article><a title="Bariloche" href="{% url 'mountain' %}"><h1>Mountain</h1></a></article>
+                            <article><a title="Buenos Aires" href="{% url 'ba' %}"><h1>BA</h1></a></article>
+                            <article><a title="People" href="{% url 'people' %}"><h1>People</h1></a></article>
 
-                            <article><h1 class="display-3">Italy</h1></article>
-                            <article><h1 class="display-3">Seattle</h1></article>
-                            <article><h1 class="display-3">Tromsø</h1></article>
-                            <article><h1 class="display-3">Iceland</h1></article>
-                            <article><h1 class="display-3">China</h1></article>
+                            <article><h1>Italy</h1></article>
+                            <article><h1>Seattle</h1></article>
+                            <article><h1>Tromsø</h1></article>
+                            <article><h1>Iceland</h1></article>
+                            <article><h1>China</h1></article>
                             
-                            <article><a title="Industrial" href="{% url 'industrial' %}"><h1 class="display-3">Others</h1></a></article> 
+                            <article><a title="Industrial" href="{% url 'industrial' %}"><h1>Others</h1></a></article> 
                         </div>
                     </div>
                 </div>

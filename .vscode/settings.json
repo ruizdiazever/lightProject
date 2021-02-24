@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\venv\\django\\Scripts\\python.exe",
+    "python.pythonPath": "/home/ever/env/glow/bin/python",
     "python.jediEnabled": false,
     "python.languageServer": "Microsoft",
 }
